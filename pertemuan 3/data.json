@@ -1,0 +1,54 @@
+{
+    "snacks": [
+        {
+            "id": 1,
+            "nama": "Keripik Singkong",
+            "harga": 15000,
+            "kategori": "snack"
+        },
+        {
+            "id": 2,
+            "nama": "Keripik Pisang",
+            "harga": 12000,
+            "kategori": "snack"
+        },
+        {
+            "id": 3,
+            "nama": "Kacang Telur",
+            "harga": 10000,
+            "kategori": "snack"
+        },
+        {
+            "id": 4,
+            "nama": "Rempeyek",
+            "harga": 8000,
+            "kategori": "snack"
+        }
+    ],
+    "drinks": [
+        {
+            "id": 1,
+            "nama": "Es Teh Manis",
+            "harga": 5000,
+            "kategori": "drink"
+        },
+        {
+            "id": 2,
+            "nama": "Es Jeruk",
+            "harga": 7000,
+            "kategori": "drink"
+        },
+        {
+            "id": 3,
+            "nama": "Jus Mangga",
+            "harga": 10000,
+            "kategori": "drink"
+        },
+        {
+            "id": 4,
+            "nama": "Kopi Susu",
+            "harga": 8000,
+            "kategori": "drink"
+        }
+    ]
+}

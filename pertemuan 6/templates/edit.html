@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Edit Data</title>
+</head>
+
+<body>
+    <h1>Edit Data</h1>
+    <form method="POST" enctype="multipart/form-data">
+        <label>Kode:</label><br>
+        <input type="text" name="kode" value="{{ file[0] }}" required><br>
+        <label>Nama:</label><br>
+        <input type="text" name="nama" value="{{ file[1] }}" required><br>
+        <label>Harga:</label><br>
+        <input type="number" name="harga" value="{{ file[2] }}" required><br>
+        <label>Gambar Lama:</label><br>
+        <img src="{{ url_for('uploaded_file', filename=file[3]) }}" width="100"><br>
+        <label>Ganti Gambar (opsional):</label><br>
+        <input type="file" name="file"><br><br>
+        <input type="submit" value="Update">
+    </form>
+</body>
+
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Edit Emas</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-light">
+    <div class="container mt-5">
+        <div class="card shadow p-4">
+            <h3 class="text-center text-warning mb-4">Edit Data Emas</h3>
+            <form method="POST" enctype="multipart/form-data">
+                <div class="mb-3">
+                    <label>Kode Emas</label>
+                    <input type="text" name="kode" value="{{ file_data[0] }}" class="form-control" required>
+                </div>
+                <div class="mb-3">
+                    <label>Nama Emas</label>
+                    <input type="text" name="nama" value="{{ file_data[1] }}" class="form-control" required>
+                </div>
+                <div class="mb-3">
+                    <label>Harga (Rp)</label>
+                    <input type="number" name="harga" value="{{ file_data[2] }}" class="form-control" required>
+                </div>
+                <div class="mb-3">
+                    <label>Ganti Foto (opsional)</label>
+                    <input type="file" name="file" class="form-control">
+                    {% if file_data[3] %}
+                    <p class="mt-2">Foto saat ini:</p>
+                    <img src="{{ url_for('uploaded_file', filename=file_data[3]) }}" width="100">
+                    {% endif %}
+                </div>
+                <button class="btn btn-warning">Perbarui</button>
+                <a href="{{ url_for('index') }}" class="btn btn-secondary">Kembali</a>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
